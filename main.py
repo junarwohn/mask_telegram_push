@@ -39,8 +39,8 @@ class storeInfo:
                 self.info[name]['remain_stat'] = info['remain_stat']
                 self.info[name]['created_at'] = info['created_at']
 
-                # if self.remain_stat in storeInfo.unavailable_status and False:
-                if False:
+                if self.remain_stat in storeInfo.unavailable_status and False:
+#                 if False:
                     pass
                 else:
                     for chat in self.chat_info:
@@ -90,8 +90,8 @@ if __name__ == "__main__":
     store_info = storeInfo(api_url=api_url, bot_token=bot_token, chat_info=chat_info, enable_5_rotation=enable_5_rotation, enable_weekend=enable_weekend)
 
     while True:
-        # if (8 <= datetime.datetime.now().hour < 20):
-        if True:
+        if (8 <= datetime.datetime.now().hour < 20):
+#         if True:
             store_info.update()
             time.sleep(REFRESH_INTERVAL)
         else:
