@@ -67,10 +67,10 @@ if __name__ == "__main__":
     while True:
         enable_5_rotation = input().lower()
         if enable_5_rotation == 'y':
-            enable_5_rotation = False 
+            enable_5_rotation = True 
             break
         elif enable_5_rotation == 'n':
-            enable_5_rotation = True 
+            enable_5_rotation = False 
             break
         else:
             print("Wrong input. Input between Y/N")
