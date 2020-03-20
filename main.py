@@ -39,7 +39,7 @@ class storeInfo:
                 self.info[name]['remain_stat'] = info['remain_stat']
                 self.info[name]['created_at'] = info['created_at']
 
-                if self.remain_stat in storeInfo.unavailable_status and False:
+                if self.info[name]['remain_stat'] in storeInfo.unavailable_status and False:
 #                 if False:
                     pass
                 else:
